@@ -150,26 +150,7 @@ root
 └── readme.md
 
 ```
----
 
-#### `node_modules` Folder
-
-It holds all of our project dependencies
-
-- Application dependencies
-- Development dependencies
-
-#### `public` Folder
-
-All of our files public to the browser including index.html where all of our react code injected inside the id of `root`.
-
-```sh
-<div id="root"></div>
-```
-
-#### `src` Folder
-
-All of our working files will be in this folder. Here, the index.js file will kick-start our application. This file will be responsible taking all of our react components and mounting them to the DOM. It holds the App component and render it to the DOM.
 
 
 ---
