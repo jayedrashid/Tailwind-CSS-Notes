@@ -6,7 +6,7 @@
 
 <p align="center">
  <img width="750px" src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220831183000/Tailwind-CSS-Tutorial1.png" align="center" alt="GitHub Readme Stats" />
- <h2 align="center">My Tailwind CSS Guide</h2>
+ <h2 align="center">Tailwind CSS Beginners Guide</h2>
 </p>
 
 To Learn officially go to.. [Tailwind CSS](https://tailwindcss.com/docs/installation)
