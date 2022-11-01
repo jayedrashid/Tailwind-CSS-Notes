@@ -23,7 +23,7 @@ To Learn officially go to.. [Tailwind CSS](https://tailwindcss.com/docs/installa
 - [Component Extraction](#component-extraction)
 - [Tailwind CSS Folder Structure](#tailwind-css-folder-structure)
 - [Breakpoints](#breakpoints)
-
+- [Notes](#notes)
 
 
 ---
@@ -200,11 +200,14 @@ root
 
 ## Breakpoints
 
+```sh
 sm		640px		@media (min-width: 640px) { ... }	Mobile
 md		768px		@media (min-width: 768px) { ... }	Fablet
 lg		1024px		@media (min-width: 1024px) { ... }	Tablet
 xl		1280px		@media (min-width: 1280px) { ... }	Laptop
 2xl		1536px		@media (min-width: 1536px) { ... }	Desktop
+```
+
 
 ---
 
