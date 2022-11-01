@@ -123,16 +123,43 @@ module.exports = {
 
 rel="stylesheet" href="./output/style.css"
 
+
 - Run Build as:
 
 ```sh
 npm run build
 ```
 
-- css run:
+- Install PostCSS:
 
 ```sh
-npm run create-css
+npm i postcss postcss-cli autoprefixer
+```
+
+- Install PostCSS config file:
+
+```sh
+npx tailwindcss init -p
+```
+
+- Edit package.json file as:
+
+```sh
+“scripts”: {
+    “build-p”: “postcss ./src/style.css -o ./output/style.css -w”
+},
+```
+
+- Run Build as:
+
+```sh
+npm run build-p
+```
+
+- Close Build Script (in case):
+
+```sh
+Ctrl + C
 ```
 
 ---
