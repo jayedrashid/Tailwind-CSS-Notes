@@ -20,6 +20,7 @@ To Learn officially go to.. [Tailwind CSS](https://tailwindcss.com/docs/installa
 - [PostCSS](#postcss)
 - [Tailwind CSS Installation](#tailwind-css-installation)
 - [Environment Setup](#environment-setup)
+- [Component Extraction](#component-extraction)
 - [Tailwind CSS Folder Structure](#tailwind-css-folder-structure)
 
 
@@ -128,14 +129,23 @@ rel="stylesheet" href="./output/style.css"
 npm run build
 ```
 
-- Create CSS:
+- css run:
 
 ```sh
 npm run create-css
 ```
 
+---
 
+## Component Extraction
 
+Add Custom CSS to your CSS src (eg: style.css) file to avoid repeatation. Use the created utility class (eg: btn-purple) in your html file.
+
+```sh
+.btn-purple {
+     @apply px-4 py-1 border-purple-200 rounded-full focus:outline-none
+}
+```
 
 ---
 
