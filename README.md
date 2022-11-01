@@ -18,6 +18,7 @@ To Learn officially go to.. [Tailwind CSS](https://tailwindcss.com/docs/installa
 - [Tailwind CSS](#tailwindcss)
 - [Production Build for Purging](#production-build-for-purging)
 - [PostCSS](#postcss)
+- [Tailwind CSS Installation](#tailwind-css-installation)
 - [Environment Setup](#environment-setup)
 - [Tailwind CSS Folder Structure](#tailwind-css-folder-structure)
 
@@ -51,6 +52,14 @@ PostCSS is a JavaScript tool that transforms your CSS code into an abstract synt
 
 ---
 
+## Tailwind CSS Installation
+
+- Install from CDN (non-customizable)
+- Install as PostCSS Plugin ()
+- Install Tailwind CLI (using terminal commands)
+
+---
+
 ## Environment Setup
 
 - Install VS Code
@@ -62,32 +71,22 @@ PostCSS is a JavaScript tool that transforms your CSS code into an abstract synt
 brew install node
 ```
 
-- Set up a new or existing npm package
+- Set up a new npm package
 
 ```sh
-npm init-y
+npm init -y
 ```
 
 - Install Tailwind CSS
 
 ```sh
-npm I tailwindcss
+npm I -D tailwindcss
 ```
 
-- Add Tailwind to your CSS src (eg: style.css) 
+- Install tailwind config file:
 
 ```sh
-@tailwind base;
-@tailwind components;
-@tailwind utilities; 
-```
-
-- Edit JSon file as:
-
-```sh
-“scripts”: {
-    “build:css”: “tailwind build src/style.css -o dist/style.css”
-},
+npx tailwindcss init
 ```
 
 - Edit tailwind.config.js file as:
@@ -100,6 +99,33 @@ module.exports = {
   plugins: {
   }
 }
+```
+
+- Add Tailwind to your CSS src (eg: style.css) 
+
+```sh
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+```
+
+- Edit package.json file as:
+
+```sh
+“scripts”: {
+    “build”: “tailwindcss -i ./src/style.css -o ./output/style.css -w”
+},
+```
+
+
+- Add CSS file to HTML as:
+
+rel="stylesheet" href="./output/style.css"
+
+- Run Build as:
+
+```sh
+npm run build
 ```
 
 - Create CSS:
