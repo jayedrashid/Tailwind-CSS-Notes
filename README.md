@@ -22,7 +22,7 @@ To Learn officially go to.. [Tailwind CSS](https://tailwindcss.com/docs/installa
 - [Environment Setup](#environment-setup)
 - [Component Extraction](#component-extraction)
 - [Tailwind CSS Folder Structure](#tailwind-css-folder-structure)
-
+- [Breakpoints](#breakpoints)
 
 
 
@@ -196,7 +196,32 @@ root
 
 ```
 
+---
 
+## Breakpoints
+
+sm		640px		@media (min-width: 640px) { ... }	Mobile
+md		768px		@media (min-width: 768px) { ... }	Fablet
+lg		1024px		@media (min-width: 1024px) { ... }	Tablet
+xl		1280px		@media (min-width: 1280px) { ... }	Laptop
+2xl		1536px		@media (min-width: 1536px) { ... }	Desktop
+
+---
+
+## Notes
+
+1. No class order in Tailwind CSS
+2. Tailwind CSS coding is mobile first. You need to add additional codes for md and lg devices
+3. Tailwind size / 4 = rem
+4. Tailwind size x 16 = px
+5. Installing CDN is great for html templates 
+6. Responsive variants: see Breakpoints list
+7. Stacking (Order) of variants 
+eg: lg:dark:hover:bg-white
+8. Dark mode variant 
+darkMode: media (system preference) and
+darkMode: class (manual preference)
+8. Specificity counts eg: ‘text-black’ loses specificity after adding ‘dark:text-white’ while darkMode: class selected in config.js
 
 ---
 
