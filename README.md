@@ -33,6 +33,10 @@ Since Tailwind is a PostCSS plugin, there's nothing stopping you from using it w
 
 Installing Tailwind CSS as a PostCSS plugin is the most seamless way to integrate it with build tools like webpack, Rollup, Vite, and Parcel.
 
+
+Production Build (Purging)
+Tailwind CSS is incredibly performance focused and aims to produce the smallest CSS file possible by only generating the CSS you are actually using in your project. Combined with minification and network compression, this usually leads to CSS files that are less than 10kB, even for large projects.
+
 ---
 
 ## PostCSS
