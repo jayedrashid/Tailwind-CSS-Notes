@@ -16,6 +16,7 @@ To Learn officially go to.. [Tailwind CSS](https://tailwindcss.com/docs/installa
 ## Quick Links
 
 - [Tailwind CSS](#tailwindcss)
+- [Production Build for Purging](#production-build-for-purging)
 - [PostCSS](#postcss)
 - [Environment Setup](#environment-setup)
 - [Tailwind CSS Folder Structure](#tailwind-css-folder-structure)
@@ -33,9 +34,13 @@ Since Tailwind is a PostCSS plugin, there's nothing stopping you from using it w
 
 Installing Tailwind CSS as a PostCSS plugin is the most seamless way to integrate it with build tools like webpack, Rollup, Vite, and Parcel.
 
+---
 
-Production Build (Purging)
+## Production Build for Purging
+
 Tailwind CSS is incredibly performance focused and aims to produce the smallest CSS file possible by only generating the CSS you are actually using in your project. Combined with minification and network compression, this usually leads to CSS files that are less than 10kB, even for large projects.
+
+Tailwind CSS v2.1 introduces a new just-in-time (JIT) compiler for Tailwind CSS that generates your styles on-demand as you author your templates instead of generating everything in advance at initial build time.
 
 ---
 
