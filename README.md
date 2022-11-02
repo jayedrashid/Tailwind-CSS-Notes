@@ -81,7 +81,7 @@ npm init -y
 - Install Tailwind CSS
 
 ```sh
-npm I -D tailwindcss
+npm i -D tailwindcss
 ```
 
 - Install tailwind config file:
@@ -90,19 +90,19 @@ npm I -D tailwindcss
 npx tailwindcss init
 ```
 
-- Edit tailwind.config.js file as:
+- Edit tailwind.config.js file to locate index.html file:
 
 ```sh
 module.exports = {
-  content: [“*”],
+  content: [“./output/**/*.html”],
   theme: {
+    extend: {},
   },
-  plugins: {
-  }
+  plugins: [],
 }
 ```
 
-- Add Tailwind to your CSS src (eg: style.css) 
+- Add Tailwind to your CSS src file (eg: input.css) 
 
 ```sh
 @tailwind base;
@@ -110,19 +110,20 @@ module.exports = {
 @tailwind utilities; 
 ```
 
-- Edit package.json file as:
+- Make a folder (eg: output) 
+
+
+- Edit package.json file with build script to recognize output CSS (eg: style.css)
 
 ```sh
 “scripts”: {
-    “build”: “tailwindcss -i ./src/style.css -o ./output/style.css -w”
+    “build”: “npx tailwindcss -i ./src/input.css -o ./output/style.css --watch”
 },
 ```
 
-
-- Add CSS file to HTML as:
+- Add CSS file (to generate output from src CSS) to HTML as:
 
 rel="stylesheet" href="./output/style.css"
-
 
 - Run Build as:
 
